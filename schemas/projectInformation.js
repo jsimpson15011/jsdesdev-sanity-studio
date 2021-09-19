@@ -39,6 +39,11 @@ export default {
       }]
     },
     {
+      name: "externalUrl",
+      title: "Project URL",
+      type: "url",
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
