@@ -6,8 +6,10 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 import projectInformation from "./projectInformation"
 import mainImage from "./mainImage"
-import tagSchema from "sanity-plugin-autocomplete-tags/build/schema/tagSchema"
 import projectTag from "./projectTag"
+import page from "./page"
+import hero from "./hero"
+import imageWithText from "./imageWithText"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -18,6 +20,9 @@ export default createSchema({
   types: schemaTypes.concat([
     projectInformation,
     mainImage,
-    projectTag
+    projectTag,
+    page,
+    hero,
+    imageWithText
   ]),
 })
